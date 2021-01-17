@@ -9,13 +9,13 @@ Vtiger_Net_Client Object
                             [encode_query_keys] => 
                         )
 
-                    [url] => https://portal.mobtexting.com/api/v2/sms/send/
+                    [url] => https://api.twilio.com/2010-04-01/Accounts/AC8e29b6f10e157db5673e9670f5de40d9/SMS/Messages
                     [protocol] => https
                     [username] => 
                     [password] => 
-                    [host] => portal.mobtexting.com
+                    [host] => api.twilio.com
                     [port] => 443
-                    [path] => /api/v2/sms/send/
+                    [path] => /2010-04-01/Accounts/AC8e29b6f10e157db5673e9670f5de40d9/SMS/Messages
                     [querystring] => Array
                         (
                         )
@@ -34,7 +34,8 @@ Vtiger_Net_Client Object
                     [connection] => close
                     [accept-encoding] => gzip
                     [referer] => http://localhost/vtigercrm/index.php?module=Contacts&parent=&page=1&view=List&viewname=7&orderby=&sortorder=&app=MARKETING&search_params=%5B%5D&tag_params=%5B%5D&nolistcache=0&list_headers=%5B%22firstname%22%2C%22lastname%22%2C%22title%22%2C%22account_id%22%2C%22email%22%2C%22phone%22%2C%22assigned_user_id%22%5D&tag=
-                    [host] => portal.mobtexting.com
+                    [authorization] => Basic QUM4ZTI5YjZmMTBlMTU3ZGI1NjczZTk2NzBmNWRlNDBkOTo0ZjkyNjU4MzljNWRmOWEyMDAzYzg0NzU0N2IwN2ExNg==
+                    [host] => api.twilio.com
                     [content-type] => application/x-www-form-urlencoded
                 )
 
@@ -45,7 +46,7 @@ Vtiger_Net_Client Object
                     [fp] => 
                     [blocking] => 1
                     [persistent] => 
-                    [addr] => ssl://portal.mobtexting.com
+                    [addr] => ssl://api.twilio.com
                     [port] => 443
                     [timeout] => 
                     [lineLength] => 2048
@@ -66,11 +67,9 @@ Vtiger_Net_Client Object
             [_proxy_pass] => 
             [_postData] => Array
                 (
-                    [access_token] => 6a94f6e504fbd0feffeef04203cc84df
-                    [service] => T
-                    [sender] => TXTSMS
-                    [message] => demo+msg
-                    [to] => 918610303202
+                    [From] => %2B12029182996
+                    [To] => %2B918610303202
+                    [Body] => hi+mmm
                 )
 
             [_body] => 
@@ -97,7 +96,7 @@ Vtiger_Net_Client Object
                             [fp] => 
                             [blocking] => 1
                             [persistent] => 
-                            [addr] => ssl://portal.mobtexting.com
+                            [addr] => ssl://api.twilio.com
                             [port] => 443
                             [timeout] => 
                             [lineLength] => 2048
@@ -113,34 +112,41 @@ Vtiger_Net_Client Object
                         )
 
                     [_protocol] => HTTP/1.1
-                    [_code] => 200
-                    [_reason] => OK
+                    [_code] => 201
+                    [_reason] => CREATED
                     [_headers] => Array
                         (
-                            [date] => Thu, 31 Dec 2020 12:22:59 GMT
-                            [content-type] => application/json
-                            [transfer-encoding] => chunked
+                            [date] => Thu, 31 Dec 2020 12:27:34 GMT
+                            [content-type] => application/xml
+                            [content-length] => 701
                             [connection] => close
-                            [server] => nginx
-                            [vary] => Accept-Encoding
-                            [x-powered-by] => PHP/7.4.13
-                            [cache-control] => no-cache, private
-                            [access-control-allow-methods] => GET, POST, PATCH, PUT, DELETE, OPTIONS
-                            [access-control-allow-headers] => Content-Type,Authorization,Origin,Accept,Access-Control-Allow-Headers,Access-Control-Allow-Methods,Access-Control-Allow-Origin,*
+                            [last-modified] => Thu, 31 Dec 2020 12:27:34 +0000
+                            [twilio-concurrent-requests] => 1
+                            [i-twilio-customer-user-agent] => None
+                            [etag] => 482295ab0a69d2b10b5c03461ec5e61f
+                            [twilio-request-id] => RQd6c32a72c1754d2f87dc0f4649c67871
+                            [twilio-request-duration] => 0.136
                             [access-control-allow-origin] => *
+                            [access-control-allow-headers] => Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+                            [access-control-allow-methods] => GET, POST, DELETE, OPTIONS
+                            [access-control-expose-headers] => ETag
                             [access-control-allow-credentials] => true
-                            [x-server-ip] => 10.10.16.174
-                            [content-encoding] => gzip
+                            [x-powered-by] => AT-5000
+                            [x-shenanigans] => none
+                            [x-home-region] => us1
+                            [x-api-domain] => api.twilio.com
+                            [strict-transport-security] => max-age=31536000
                         )
 
                     [_cookies] => 
-                    [_body] => {"status":200,"message":"1 numbers accepted for delivery.","data":[{"id":"f9bfd8d9-e3f7-4b52-ba81-fd8cb017b994:1","mobile":"918610303202","status":"AWAITING-DLR","units":1,"length":8,"charges":"1.0000","customid":"","customid1":"","iso_code":null,"submitted_at":"2020-12-31 17:52:59"}]}
+                    [_body] => <?xml version='1.0' encoding='UTF-8'?>
+<TwilioResponse><SMSMessage><Sid>SM861aaea3587145c0b72724a3ab43ddf7</Sid><DateCreated>Thu, 31 Dec 2020 12:27:34 +0000</DateCreated><DateUpdated>Thu, 31 Dec 2020 12:27:34 +0000</DateUpdated><DateSent/><AccountSid>AC8e29b6f10e157db5673e9670f5de40d9</AccountSid><To>+918610303202</To><From>+12029182996</From><Body>Sent from your Twilio trial account - hi mmm</Body><Status>queued</Status><Direction>outbound-api</Direction><ApiVersion>2010-04-01</ApiVersion><Price/><PriceUnit>USD</PriceUnit><Uri>/2010-04-01/Accounts/AC8e29b6f10e157db5673e9670f5de40d9/SMS/Messages/SM861aaea3587145c0b72724a3ab43ddf7</Uri><NumSegments>1</NumSegments></SMSMessage></TwilioResponse>
                     [_chunkLength] => 0
                     [_listeners] => Array
                         (
                         )
 
-                    [_toRead] => 
+                    [_toRead] => 0
                 )
 
             [_allowRedirects] => 
@@ -156,6 +162,6 @@ Vtiger_Net_Client Object
             [_socketOptions] => 
         )
 
-    [url] => https://portal.mobtexting.com/api/v2/sms/send/
+    [url] => https://api.twilio.com/2010-04-01/Accounts/AC8e29b6f10e157db5673e9670f5de40d9/SMS/Messages
     [response] => 1
 )
