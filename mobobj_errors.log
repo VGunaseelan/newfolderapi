@@ -1,0 +1,28 @@
+SimpleXMLElement Object
+(
+    [SMSMessage] => SimpleXMLElement Object
+        (
+            [Sid] => SM861aaea3587145c0b72724a3ab43ddf7
+            [DateCreated] => Thu, 31 Dec 2020 12:27:34 +0000
+            [DateUpdated] => Thu, 31 Dec 2020 12:27:34 +0000
+            [DateSent] => SimpleXMLElement Object
+                (
+                )
+
+            [AccountSid] => AC8e29b6f10e157db5673e9670f5de40d9
+            [To] => +918610303202
+            [From] => +12029182996
+            [Body] => Sent from your Twilio trial account - hi mmm
+            [Status] => queued
+            [Direction] => outbound-api
+            [ApiVersion] => 2010-04-01
+            [Price] => SimpleXMLElement Object
+                (
+                )
+
+            [PriceUnit] => USD
+            [Uri] => /2010-04-01/Accounts/AC8e29b6f10e157db5673e9670f5de40d9/SMS/Messages/SM861aaea3587145c0b72724a3ab43ddf7
+            [NumSegments] => 1
+        )
+
+)
