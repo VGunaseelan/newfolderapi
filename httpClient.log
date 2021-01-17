@@ -1,0 +1,161 @@
+Vtiger_Net_Client Object
+(
+    [client] => HTTP_Request Object
+        (
+            [_url] => Net_URL Object
+                (
+                    [options] => Array
+                        (
+                            [encode_query_keys] => 
+                        )
+
+                    [url] => https://portal.mobtexting.com/api/v2/sms/send/
+                    [protocol] => https
+                    [username] => 
+                    [password] => 
+                    [host] => portal.mobtexting.com
+                    [port] => 443
+                    [path] => /api/v2/sms/send/
+                    [querystring] => Array
+                        (
+                        )
+
+                    [anchor] => 
+                    [useBrackets] => 1
+                    [user] => 
+                    [pass] => 
+                )
+
+            [_method] => POST
+            [_http] => 1.1
+            [_requestHeaders] => Array
+                (
+                    [user-agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+                    [connection] => close
+                    [accept-encoding] => gzip
+                    [referer] => http://localhost/vtigercrm/index.php?module=Contacts&parent=&page=1&view=List&viewname=7&orderby=&sortorder=&app=MARKETING&search_params=%5B%5D&tag_params=%5B%5D&nolistcache=0&list_headers=%5B%22firstname%22%2C%22lastname%22%2C%22title%22%2C%22account_id%22%2C%22email%22%2C%22phone%22%2C%22assigned_user_id%22%5D&tag=
+                    [host] => portal.mobtexting.com
+                    [content-type] => application/x-www-form-urlencoded
+                )
+
+            [_user] => 
+            [_pass] => 
+            [_sock] => Net_Socket Object
+                (
+                    [fp] => 
+                    [blocking] => 1
+                    [persistent] => 
+                    [addr] => ssl://portal.mobtexting.com
+                    [port] => 443
+                    [timeout] => 
+                    [lineLength] => 2048
+                    [_debug] => 
+                    [_default_error_mode] => 
+                    [_default_error_options] => 
+                    [_default_error_handler] => 
+                    [_error_class] => PEAR_Error
+                    [_expected_errors] => Array
+                        (
+                        )
+
+                )
+
+            [_proxy_host] => 
+            [_proxy_port] => 
+            [_proxy_user] => 
+            [_proxy_pass] => 
+            [_postData] => Array
+                (
+                    [access_token] => 6a94f6e504fbd0feffeef04203cc84df
+                    [service] => T
+                    [sender] => TXTSMS
+                    [message] => demo+msg
+                    [to] => 918610303202
+                )
+
+            [_body] => 
+            [_bodyDisallowed] => Array
+                (
+                    [0] => TRACE
+                )
+
+            [_bodyRequired] => Array
+                (
+                    [0] => POST
+                    [1] => PUT
+                )
+
+            [_postFiles] => Array
+                (
+                )
+
+            [_timeout] => 
+            [_response] => HTTP_Response Object
+                (
+                    [_sock] => Net_Socket Object
+                        (
+                            [fp] => 
+                            [blocking] => 1
+                            [persistent] => 
+                            [addr] => ssl://portal.mobtexting.com
+                            [port] => 443
+                            [timeout] => 
+                            [lineLength] => 2048
+                            [_debug] => 
+                            [_default_error_mode] => 
+                            [_default_error_options] => 
+                            [_default_error_handler] => 
+                            [_error_class] => PEAR_Error
+                            [_expected_errors] => Array
+                                (
+                                )
+
+                        )
+
+                    [_protocol] => HTTP/1.1
+                    [_code] => 200
+                    [_reason] => OK
+                    [_headers] => Array
+                        (
+                            [date] => Thu, 31 Dec 2020 12:22:59 GMT
+                            [content-type] => application/json
+                            [transfer-encoding] => chunked
+                            [connection] => close
+                            [server] => nginx
+                            [vary] => Accept-Encoding
+                            [x-powered-by] => PHP/7.4.13
+                            [cache-control] => no-cache, private
+                            [access-control-allow-methods] => GET, POST, PATCH, PUT, DELETE, OPTIONS
+                            [access-control-allow-headers] => Content-Type,Authorization,Origin,Accept,Access-Control-Allow-Headers,Access-Control-Allow-Methods,Access-Control-Allow-Origin,*
+                            [access-control-allow-origin] => *
+                            [access-control-allow-credentials] => true
+                            [x-server-ip] => 10.10.16.174
+                            [content-encoding] => gzip
+                        )
+
+                    [_cookies] => 
+                    [_body] => {"status":200,"message":"1 numbers accepted for delivery.","data":[{"id":"f9bfd8d9-e3f7-4b52-ba81-fd8cb017b994:1","mobile":"918610303202","status":"AWAITING-DLR","units":1,"length":8,"charges":"1.0000","customid":"","customid1":"","iso_code":null,"submitted_at":"2020-12-31 17:52:59"}]}
+                    [_chunkLength] => 0
+                    [_listeners] => Array
+                        (
+                        )
+
+                    [_toRead] => 
+                )
+
+            [_allowRedirects] => 
+            [_maxRedirects] => 3
+            [_redirects] => 0
+            [_useBrackets] => 1
+            [_listeners] => Array
+                (
+                )
+
+            [_saveBody] => 1
+            [_readTimeout] => 
+            [_socketOptions] => 
+        )
+
+    [url] => https://portal.mobtexting.com/api/v2/sms/send/
+    [response] => 1
+)
